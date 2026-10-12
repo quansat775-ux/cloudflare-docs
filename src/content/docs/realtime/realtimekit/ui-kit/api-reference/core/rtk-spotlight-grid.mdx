@@ -5,6 +5,18 @@ description: API reference for rtk-spotlight-grid component (Web Components (HTM
 products:
   - realtime
 ---
+
+{/*
+  AUTO-GENERATED FILE. DO NOT EDIT MANUALLY.
+  Any manual changes will be overwritten the next time the docs are generated.
+
+  Source: https://github.com/cloudflare/realtimekit-ui/blob/staging/packages/core/src/components/rtk-spotlight-grid/rtk-spotlight-grid.tsx
+  Generator: https://github.com/cloudflare/realtimekit-ui/blob/staging/scripts/generate-stencil-docs.js
+
+  To update this page, change the component source in https://github.com/cloudflare/realtimekit-ui
+  and run `npm run docs:generate`.
+*/}
+
 A grid component that renders two lists of participants: `pinnedParticipants` and `participants`.
  You can customize the layout to a `column` view, by default is `row`.
  - Participants from `pinnedParticipants[]` are rendered inside a larger grid.
@@ -40,7 +52,8 @@ A grid component that renders two lists of participants: `pinnedParticipants` an
 ```html
 <rtk-spotlight-grid
  aspectRatio="example"
- gridSize="md">
+ gridSize="md"
+ size="md">
 </rtk-spotlight-grid>
 ```
 
@@ -49,6 +62,8 @@ A grid component that renders two lists of participants: `pinnedParticipants` an
 <script>
   const el = document.querySelector("rtk-spotlight-grid");
 
-  el.gap= 42;
+  el.meeting = meeting;
+  el.gap = 42;
+  el.participants = [];
 </script>
 ```
